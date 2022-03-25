@@ -20,5 +20,5 @@ def main(a,b,c):
     elif c>a and c>b and a<b:
         return c-a
     else:
-        #c>a and c>b and a>b:
         return c-b
+print(main(5,5,5))
