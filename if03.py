@@ -1,4 +1,5 @@
 def main(a,b,c):
+    
     """
     Determine the number between large and small.
     Args:
@@ -8,4 +9,16 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return
+    if a>b and a>c and c<b:
+        return a-c
+    elif a>b and a>c and c>b:
+        return a-b
+    elif b>a and b>c and c<b:
+        return b-c
+    elif b>a and b>c and c>a:
+        return b-c
+    elif c>a and c>b and a<b:
+        return c-a
+    else:
+        #c>a and c>b and a>b:
+        return c-b
