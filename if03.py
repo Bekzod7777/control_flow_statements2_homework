@@ -10,15 +10,14 @@ def main(a,b,c):
         int: return answer.
     """
     if a>b and a>c and c<b:
-        return a-c
+        return b
     elif a>b and a>c and c>b:
-        return a-b
+        return c
     elif b>a and b>c and c<b:
-        return b-c
+        return a
     elif b>a and b>c and c>a:
-        return b-c
+        return c
     elif c>a and c>b and a<b:
-        return c-a
+        return b
     else:
-        return c-b
-print(main(5,5,5))
+        return a
